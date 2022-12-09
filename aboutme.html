@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mashq uchun</title>
+    <style>
+        .main-header{
+            background-color: green;
+            color: white;
+            border: 10px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="main-header">Lorem, ipsum dolor sit amet consectetur adipisicing.</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Raqamlar
+                </th>
+                <th>
+                    Ismlar
+                </th>
+                <th>
+                    Yosh
+                </th>
+                <th>
+                    Soha
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    1
+                </td>
+                <td>
+                    Abdukarimov
+                </td>
+                <td>
+                    23
+                </td>
+                <td>
+                    Dasturlash
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    2
+                </td>
+                <td>
+                    G'anijonov
+                </td>
+                <td>
+                    23
+                </td>
+                <td>
+                    Neft-Gaz
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    3
+                </td>
+                <td>
+                    Fayzullakhadjaev
+                </td>
+                <td>
+                    24
+                </td>
+                <td>
+                    Nihao
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    4
+                </td>
+                <td>
+                    Mahmudjonova
+                </td>
+                <td>
+                    24
+                </td>
+                <td>
+                    Sezam Garden
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <!-- RO'YAXTLAR  -->
+    
+    <h3> tartibsiz mevalar ro'yxati</h3>
+    
+    <ul>
+        <li>olma</li>
+        <li>nok</li>
+        <li>uzum</li>
+        <li>shaftoli</li>
+        <li>sveji mevalar</li>
+        <ul>
+            <li>tarvuz</li>
+            <li>qovun</li>
+        </ul>
+    </ul>
+    
+    <hr>
+    <h3>tartibli mevalar ro'yxati</h3>
+    
+    <ol>
+        <li>olma</li>
+        <li>nok</li>
+        <li>uzum</li>
+        <li>shaftoli</li>
+        <li>sveji mevalar</li>
+        <ol>
+            <li>tarvuz</li>
+            <li>qovun</li>
+        </ol>
+    </ol>
+    
+    <p id="greenp">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+    <p class="bluep">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p>Lorem ipsum dolor sit amet, <span id="spanid">consectetur</span>  adipisicing.</p>
+    
+    <!-- FORMALAR  -->
+    <form action="/rver.php" method="get">
+        <label for="username">username</label>
+        <input type="text" name="usernameonetwo" id="username"> <br> <br>
+        <label for="password">password</label>
+        <input type="password" name="password" id="password"> <br> <br>
+        <button>Login</button>
+        <br> <br>
+        
+        <label for="email">Elektron pochtangiz</label>
+        <input type="email" name="falonname" id="email">
+        <button>Send</button> <br> <br> 
+        
+        <label for="sana">Tug'ilgan sana</label>
+        <input type="date" name="falondate" id="sana"> <br> <br> 
+        
+        <label for="aaaa">Talaba</label>
+        <input type="checkbox" name="falon" id="aaaa"> <br> <br>
+        
+        <label for="erkak">Erkak</label>
+        <input type="radio" name="gender" id="male">
+        <label for="ayol">Ayol</label>
+        <input type="radio" name="gender" id="female"> <br> <br>
+        
+        <label for="passport">Pasportingiz</label>
+        <input type="file" name="falonpasprt" id="passport"> <br> <br> 
+        
+        <hr>
+        <label for="tajriba">Tajribangiz</label>
+        <select name="experience" id="tajriba">
+            <option value="0">Tajriba yo'q</option>
+            <option value="1">1 yildan kam</option>
+            <option value="2">1 yildan ko'p</option>
+            <option value="3">3 yildan ko'p</option>
+        </select> <br> <br>
+        <hr>
+        
+        <label for="haqida">O'zingiz haqingizda</label> <br><br>
+        <textarea name="about" id="haqida" cols="50" rows="10"></textarea>
+    </form>
+    <br> <br>
+</body>
+</html>
