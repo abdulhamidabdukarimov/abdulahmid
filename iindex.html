@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="abdulkhamid abdukarimov">
+    <meta name="keywords" content="sdad, sdasd, sadasd, dsasa">
+    <meta name="description" content="dasturlashni o'rganish uchun">
+    <link rel="icon" href="img/icon-instagram.svg">
+    <title>Document</title>
+    <style>
+        
+        .style-given-paragraph{
+            color: green;
+            background-color: bisque;
+            text-decoration: underline;
+            text-align: right;
+        }
+        /* TABLE  */
+        th, td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        thead{
+            text-align: left;
+        }
+        /* table tugadi  */
+        #greenp{
+            color: green;
+        }
+        
+        .bluep{
+            color: blue;
+        }
+        #spanid{
+            color: greenyellow
+        }
+        /* *{color: blanchedalmond}  */
+        .overflow-one{
+            background-color: red;
+            color: #fff;
+            max-height: 50px;
+            max-width: 900px;
+            overflow: auto;
+        }
+        .to-block-element{
+            background-color: antiquewhite;
+            display: block;
+        }
+        .to-inline-element{
+            background-color: #000;
+            color: #fff;
+            display: inline;
+        }
+        .long-lorem{
+            float: left;
+         }
+         .xullasclass:hover{
+            background-color: #000;
+            color: #fff;
+            text-decoration: underline;
+            text-align: center;
+
+         }
+         .xullasclasstwo:active{
+            background-color: blue;
+            color: #fff;
+
+         }
+         .main-footer{
+            width: 100%;
+            height: 300px
+         }
+    </style>
+</head>
+<body>
+    
+    <!-- KODLAR  -->
+    <p style="color: red;">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p style="background-color: #000; color: #fff">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p style="opacity: 0.40;">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+    <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p><b>Lorem ipsum, dolor sit amet consectetur adipisicing.</b></p>
+    <p><i>Lorem ipsum dolor sit amet consectetur adipisicing.</i></p>
+    <p><b><i>Lorem ipsum dolor sit amet consectetur adipisicing.</i></b></p>
+    <p><del>Lorem ipsum dolor sit amet consectetur adipisicing.</del></p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing.<sub>Lorem ipsum, dolor sit amet consectetur adipisicing.</sub></p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing. <sup>Lorem ipsum dolor sit amet consectetur adipisicing.</sup></p>
+    <!-- stillar berish 3 xil bo'ladi (inline style, internal style, external style)   -->
+    <!-- inline styles har bir elementning o'ziga  beriladigan stillar. ular faqatgina usha tag uchun amal qiladi. masalan <p style="color: blue;">lorem</p> faqatgina shu paragraph uchun amal qiladi -->
+    <!-- internal styles esa qachonki biz barcha paragraphlarni yoki headinglarni umuman har bir tagning barchasiga style bermoqchi bo'lsak internal styles dan foydalanamiz. buning uchun HEAD qismida TITLE bo'limidan so'ng STYLE degan tag ochamiz va uning ichiga element nomini yozamiz masalan p {shu qavs ichiga bermoqchi bo'lgan stillarimizni yozamiz}  -->
+    <!-- external styles bu qachonki bizning fayllarimiz ko'p bo'lib va ularning barchasiga stil bermoqchi bo'lsak qo'llaymiz. buning uchun yangi .css bolib tugaydigan file ochamiz va title ning tagidan 
+        <link rel="stylsheet" href="yangi fayl nomi.css"> yozamiz.  -->
+        <p class="style-given-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <a href="https://google.com">google ga otish</a>
+        <hr>
+        <a href="https://google.com" target="_blank">google ga boshqa tabda o'tish </a>
+        <hr>
+        <img src="#" alt="rasm" width="200" height="200">
+        <img src="https://picsum.photos/200" alt="random rasm" width="200" height="200">
+        <img src="https://picsum.photos/500 blurred 5" alt="random rasm" width="500" height="500"> 
+        <!-- organamam  -->
+        
+        
+        <!-- TABLITSALAR  -->
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Raqamlar
+                    </th>
+                    <th>
+                        Ismlar
+                    </th>
+                    <th>
+                        Yosh
+                    </th>
+                    <th>
+                        Soha
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        Abdukarimov
+                    </td>
+                    <td>
+                        23
+                    </td>
+                    <td>
+                        Dasturlash
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        2
+                    </td>
+                    <td>
+                        G'anijonov
+                    </td>
+                    <td>
+                        23
+                    </td>
+                    <td>
+                        Neft-Gaz
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        3
+                    </td>
+                    <td>
+                        Fayzullakhadjaev
+                    </td>
+                    <td>
+                        24
+                    </td>
+                    <td>
+                        Nihao
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        4
+                    </td>
+                    <td>
+                        Mahmudjonova
+                    </td>
+                    <td>
+                        24
+                    </td>
+                    <td>
+                        Sezam Garden
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <!-- RO'YAXTLAR  -->
+        
+        <h3> tartibsiz mevalar ro'yxati</h3>
+        
+        <ul>
+            <li>olma</li>
+            <li>nok</li>
+            <li>uzum</li>
+            <li>shaftoli</li>
+            <li>sveji mevalar</li>
+            <ul>
+                <li>tarvuz</li>
+                <li>qovun</li>
+            </ul>
+        </ul>
+        
+        <hr>
+        <h3>tartibli mevalar ro'yxati</h3>
+        
+        <ol>
+            <li>olma</li>
+            <li>nok</li>
+            <li>uzum</li>
+            <li>shaftoli</li>
+            <li>sveji mevalar</li>
+            <ol>
+                <li>tarvuz</li>
+                <li>qovun</li>
+            </ol>
+        </ol>
+        
+        <p id="greenp">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+        <p class="bluep">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <p>Lorem ipsum dolor sit amet, <span id="spanid">consectetur</span>  adipisicing.</p>
+        
+        <!-- FORMALAR  -->
+        <form action="/rver.php" method="get">
+            <label for="username">username</label>
+            <input type="text" name="usernameonetwo" id="username"> <br> <br>
+            <label for="password">password</label>
+            <input type="password" name="password" id="password"> <br> <br>
+            <button>Login</button>
+            <br> <br>
+            
+            <label for="email">Elektron pochtangiz</label>
+            <input type="email" name="falonname" id="email">
+            <button>Send</button> <br> <br> 
+            
+            <label for="sana">Tug'ilgan sana</label>
+            <input type="date" name="falondate" id="sana"> <br> <br> 
+            
+            <label for="aaaa">Talaba</label>
+            <input type="checkbox" name="falon" id="aaaa"> <br> <br>
+            
+            <label for="erkak">Erkak</label>
+            <input type="radio" name="gender" id="male">
+            <label for="ayol">Ayol</label>
+            <input type="radio" name="gender" id="female"> <br> <br>
+            
+            <label for="passport">Pasportingiz</label>
+            <input type="file" name="falonpasprt" id="passport"> <br> <br> 
+            
+            <hr>
+            <label for="tajriba">Tajribangiz</label>
+            <select name="experience" id="tajriba">
+                <option value="0">Tajriba yo'q</option>
+                <option value="1">1 yildan kam</option>
+                <option value="2">1 yildan ko'p</option>
+                <option value="3">3 yildan ko'p</option>
+            </select> <br> <br>
+            <hr>
+            
+            <label for="haqida">O'zingiz haqingizda</label> <br><br>
+            <textarea name="about" id="haqida" cols="50" rows="10"></textarea>
+        </form>
+        <br> <br>
+        
+        
+        <!-- AUDIO  -->
+        <audio controls>
+            <source src="audio/Elyorbek Melibayev - G'animatim Onajon  .mp3" type="audio/mp3">
+        </audio>
+        <br> <br> <br>
+
+        
+
+        <hr>
+
+        <!-- !importand css style berilayotgan vaqtda ishlatilinadi -->
+        <!-- padding bu elementing content qismidan uning chegarasigacha bolgan masofa, px da beriladi  -->
+
+        <!-- TEXTNI BO'YINI QISQARTIRIB UNI PASGA SICHQONCHA YORDAMIDA TUSHIRIB KO'RISH MUMKIN  -->
+
+        <p class="overflow-one">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil harum illo, cupiditate obcaecati possimus blanditiis eveniet ea magnam doloribus, voluptate ex dolor delectus omnis est ratione molestias placeat mollitia. Eaque, ex eius perspiciatis soluta consequatur ipsam dolorem sapiente, quia dicta, ab fugit corrupti ipsum nam corporis eveniet quae repellat neque cumque harum exercitationem laudantium enim cum pariatur velit! Tenetur explicabo deserunt unde iste minima facilis nostrum nihil qui, veniam fuga quae hic impedit voluptate, saepe ducimus quam aperiam consequatur eaque numquam eum, atque quo recusandae. Beatae saepe pariatur totam dolor esse hic expedita quibusdam illum voluptatem dolorem, autem ipsum exercitationem inventore quae ab vel, voluptate quia nisi cupiditate, recusandae neque et. Optio exercitationem dolor, maiores placeat eaque deleniti enim aperiam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, expedita recusandae. Incidunt quasi dolor beatae perspiciatis enim illo, molestias, tempore iste quaerat maiores ratione qui? Officia ratione doloremque quia optio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores possimus ea tempora at voluptatibus maxime illum sapiente hic fuga, aperiam explicabo harum doloribus esse accusantium, praesentium omnis? Quod, sed maxime! Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugiat beatae expedita maxime blanditiis porro! A itaque doloribus voluptas corporis at nulla, eius ipsa tempore, voluptate officia neque. Soluta, ad!</p>
+
+            <!-- INLINE ELEMENTNI BLOCK ELEMENTGA VA BLOCK ELEMENTNI INLINE ELEMENTGA AYLANTIRISH  -->
+
+        <a class="to-block-element" href="#">inline elementni block elementga aylantirish</a> 
+        <p class="to-inline-element">block elementni inline elementga aylantirish</p> <p class="to-inline-element">lorem</p> <br> <br> <br>
+
+        <!-- RASMNING O'NG VA CHAP TARAFIGA FLOAT YORDAMIDA MATN JOYLASHTIRISH  -->
+
+        <span class="long-lorem"><img class="inline-block" src="https://picsum.photos/400" alt="aa"></span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo aliquid unde eum consequuntur quae enim aut excepturi, beatae aperiam dolore id eveniet esse inventore ducimus minus eaque laborum distinctio, sed, iusto accusamus blanditiis alias? Sunt iste obcaecati illo aperiam, quae quasi numquam alias sed unde doloremque nostrum ullam minima cupiditate ab recusandae assumenda illum provident? Tenetur sunt asperiores veniam, minima quam debitis perferendis ad nulla impedit, assumenda accusantium possimus corporis? Nam, tempora pariatur, veritatis natus, cumque exercitationem eaque similique repudiandae doloribus nemo ratione! Quam, provident quos illum culpa sunt repellendus esse facere libero molestiae, nobis dolore voluptate dolores officiis explicabo, asperiores animi est nihil cupiditate expedita iure earum? Reprehenderit reiciendis corporis vero esse autem officiis ratione, rerum accusantium, libero deleniti debitis soluta molestias tenetur ipsum ad laborum commodi inventore ex ut iste, magnam magni veniam sequi? Adipisci cum optio minima, at maiores aspernatur excepturi, rerum id neque quas autem ab perferendis pariatur nostrum culpa! Nisi ratione alias, eum perferendis pariatur impedit maxime iusto dolorum, corrupti vitae iure facere a omnis adipisci dignissimos cupiditate maiores veniam labore, saepe hic excepturi enim! Veniam illo repellendus similique harum perspiciatis iusto nobis minima dolores. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic eos cum et? Ex facere laboriosam velit adipisci architecto? Accusamus delectus aliquid nisi eligendi. Dolorum totam accusamus, quia velit quibusdam dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, in rem quod voluptas minus harum voluptates odio vero ratione sit ullam, unde repudiandae consectetur eveniet commodi vel nam eos minima obcaecati, id soluta illum recusandae. Saepe at quos minima atque eius repellat quae et. Reprehenderit fugit laborum iure vel officia minima totam repellat nisi eius vitae maiores placeat nemo repellendus at dicta nobis in autem molestias atque incidunt, aspernatur est? Asperiores, inventore nam. Qui quaerat necessitatibus corporis exercitationem quidem quam et nisi ad, sapiente accusantium repellendus dolorum minus in dicta quibusdam ut provident. Fuga, maiores tempora? Quam nobis deleniti dolores!lorem100 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit eveniet ratione modi, reiciendis rerum, velit perferendis corrupti sint obcaecati facere soluta deserunt perspiciatis, amet temporibus impedit? Error fuga fugit laborum omnis nihil consequatur nesciunt doloribus asperiores, cum molestias! Reprehenderit reiciendis odit blanditiis, modi eligendi harum cum neque magnam nulla incidunt amet hic tempore aliquam quasi est perspiciatis quis dicta deleniti ad nam a ab quo? Et, laborum temporibus blanditiis beatae id quidem debitis itaque repellendus odit, ipsam minus, unde ut numquam aut dolore! Vero alias, quidem fuga magnam neque maxime. Aperiam dicta deleniti exercitationem explicabo, reprehenderit odit id incidunt excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam recusandae aliquam quidem eum rerum debitis, quam cumque cupiditate nostrum commodi quae adipisci veritatis nisi ipsam labore, incidunt at consequatur itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ipsa dolorum, fugit hic amet tempora totam dolorem, explicabo eligendi eius at obcaecati est quam provident. Saepe voluptates placeat error! Ipsa!
+        <hr> <br> <br>
+
+        <!-- MATNNING USTIGA SICHQONCHANI OLIB KELGANDA UNING XOLATI O'ZGARISHI HOVER YORDAMIDA  -->
+
+
+        <p class="xullasclass">Ustiga sichqoncha olib kelganda xolati o'zgaradi </p>
+        <br>
+
+        <!-- SICHQONCHA BILAN USTIGA BOSIB TURILGANDA XOLATI OZGARISHI   -->
+        
+        <p class="xullasclasstwo">ustiga sichqonchani olib kelib bosganda xolatning o'zgarishi</p>
+
+        <p style="position: relative; top: 100px; left: 100px;">posotion i relative qilib unga top left xar qil xossalarni berish margin top left bn farqi <br> margin pasidagi yoki yonidagi elementni ham suradi lekin position boshqa elementlarning ustiga dehqonchasiga surilib ketaveradi</p>
+
+
+
+
+
+
+
+
+
+
+        <footer class="main-footer">
+
+        </footer>
+        
+
+       
+
+        
+        
+     </body>
+    </html>
